@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('groups', 'GroupsController');
+Route::resource('conversations', 'ConversationController');
