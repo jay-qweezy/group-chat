@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 Route::resource('groups', 'GroupsController');
 Route::resource('conversations', 'ConversationController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
